@@ -1,0 +1,141 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3{
+    color: white;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1, 1, 0);
+}
+#panel{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+    background-color: #a92727;
+    animation: rollingChange 59s infinite;
+}
+#ptop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(72, 104, 71);
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box{
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#pbtm{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: calc(100% -100px);
+    
+}
+/* @keyframes rollingChange{
+    0%{
+        background-color: greenyellow;
+    }
+    25%{
+        background-color: rgb(red, green, blue);
+    }
+    50%{
+        background-color: rgb(red, green, blue);
+    }
+    75%{
+        background-color: rgb(rgba(129, 17, 106, 0.474), rgb(116, 135, 116), rgb(149, 155, 61));
+    }
+    100%{
+        background-color: rgb(rgb(132, 56, 56), rgb(83, 139, 83), rgb(53, 53, 104));
+    } */
+/* } */
+.bubble:hover{
+    background-color:rgb(47, 91, 49);
+    transform: scale(1.2);
+}
+.bubble{
+    animation: change 60s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-weight: 400;
+    border-radius: 50%;
+    background-color: rgb(61, 82, 18);
+}
+/* @keyframes change{
+    0%{
+        background-color:rgb(33, 152, 41);
+        
+
+    }
+    25%{
+        background-color: #802a2a;
+        margin-bottom: 5px;
+
+    }
+    50%{
+        background-color: #2d2763;
+        margin-left: 5px;
+        
+    }
+    75%{
+        background-color: #884747;
+        margin-right: -5px;
+        
+    }
+    100%{
+        background-color: #428955;
+        margin-top: -5px;
+        
+    }
+} */
+h1{
+    text-align: center;
+    width: 100%;
+}
+span{
+    color: green;
+}
+
+
+@media (max-width:562px) {
+    #main{
+        width: 560px;
+
+    }
+    #panel{
+        width: 560px;
+    }
+    
+}
